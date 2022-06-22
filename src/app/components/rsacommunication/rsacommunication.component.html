@@ -1,0 +1,24 @@
+<div class = "card-body">
+    <form>
+        <div class="form-group">
+            <textarea rows="2" class="form-control" placeholder="mensaje" required #mensaje></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" (click)="encrypt(mensaje)" type="button">Encryptar</button>
+    </form>
+</div>
+<div class = "card-body">
+    <form>
+        <div class="form-group">
+            <textarea rows="2" class="form-control" placeholder="mensaje" required #Firma></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" (click)="sign(Firma)" type="button">Firma</button>
+    </form>
+</div>
+<div class = "card-body">
+    <form>
+        <div class="form-group">
+            <textarea rows="2" class="form-control" placeholder="mensaje" required #Ciega></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" (click)="firmaCiega(Ciega)" type="button">Firma ciega</button>
+    </form>
+</div>
